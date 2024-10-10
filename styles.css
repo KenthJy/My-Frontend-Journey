@@ -1,5 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* root variables */
+:root {
+    --main-color-body: #332E2E;
+    --main-color-scrimba: #1F1D1D;
+    --main-color-freecodecamp: #0C0B0B;
+
+    --other-color-reset : black;
+    --other-color-reset2 : white;
+
+    --nav-font-weight : 500;
+  }
+
+/* css reset */
 *, *::after, *::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--main-color-body);   
+    justify-content: center;
+}
+
+.nav-links,
+body{
+    display: flex;
+}
+/* header css */
+.nav-links{
+    gap: 1em;
+    padding: 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--other-color-reset);
+    cursor: pointer;
+}
+
+.nav-links a li {
+    list-style: none;
+    color: var(--other-color-reset2);
+    font-weight: var(--nav-font-weight);
 }
