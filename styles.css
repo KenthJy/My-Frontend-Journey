@@ -2,7 +2,7 @@
 
 /* root variables */
 :root {
-    --main-color-body: #332E2E;
+    --main-color-body: #171414;
     --main-color-scrimba: #1F1D1D;
     --main-color-freecodecamp: #0C0B0B;
 
@@ -18,17 +18,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
-    min-width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-color: var(--main-color-body);   
 }
-
-
-
-
 
 /* header css */
 header, 
@@ -42,30 +39,40 @@ header,
 nav{
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    border: 1px solid var(--other-color-reset2);
+    align-items: center;   
+}
+
+nav{
+    background-color: transparent;
+
 }
 
 header{
-    padding: 1em;
+    padding: .5em;
+    background: rgb(78,55,154);
+background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, rgba(70,46,147,1) 2%, rgba(55,37,114,1) 8%, rgba(34,24,66,1) 30%, rgba(21,12,56,1) 64%, rgba(3,0,17,1) 81%);
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-links{
   gap: 1.5em;
-  border: 1px solid var(--other-color-reset2);
+
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--other-color-reset);
     cursor: pointer;
-    display: inline-block;
 }
 
 .nav-links a li {
     list-style: none;
     color: var(--other-color-reset2);
     font-weight: var(--nav-font-weight);
+    font-size: .8rem;
 }
 
 .logo-github{
@@ -81,9 +88,11 @@ header{
     display: grid;
     grid-template: minmax(10px, auto) / repeat(2, 1fr);
     gap: .3em;
-    margin: 1em 0;
+    margin: 4.3em 0 1em;
     padding: 1em;
     text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .section1 h1{
@@ -92,8 +101,9 @@ header{
 }
 
 .section1 p {
-    font-size: .8rem;
+    font-size: .6rem;
     color: gray;
+    font-weight: 500;
    
 }
 
@@ -111,6 +121,7 @@ header{
     border-radius: 20px;
     width: 100%;
     height: 100%;
+    box-shadow: 0 0 100px rgb(71, 13, 71);
 }
 
 
@@ -124,6 +135,10 @@ header{
     border-radius: 3px;
 }
 
+.connect:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(106, 18, 106);
+}
 .container{
     flex-direction: column;
     justify-content: center;
@@ -133,7 +148,7 @@ header{
 
 .container ul {
     display: flex;
-    gap: .5em;
+    gap: .6em;
 }
 
 /* section 2 css */
@@ -168,3 +183,70 @@ header{
     align-self: flex-start;
     justify-self: flex-start;
 }
+
+/* section 3 class */
+
+.section3{
+    padding: 1em;
+    display: grid;
+    grid-template: minmax(50px, auto) repeat(4, minmax(100px, auto)) / repeat(2, minmax(100px, auto));
+    gap: .5em;
+    text-align: center;
+}
+
+.section3 p {
+    color: rgb(123, 106, 106);
+}
+
+.section3 h2{
+    grid-column: span 2;
+    align-self: center;
+    color: white;
+    
+}
+
+.container-section31,
+.container-section33{
+    border-right: 2px solid white;
+   
+}
+.container-section31 h3{
+    color: yellow;
+}
+
+
+.container-section32,
+.container-section34{
+    border-left: 10px solid white;
+    color: rgb(50, 50, 207);
+}
+
+.container-section32{
+    grid-row: 3/5 ;
+    grid-column: 2/3;
+
+    padding: 1em;
+}
+
+.container-section31{
+    padding: 1em;
+
+
+}
+.container-section33{
+    padding: 1em;
+    grid-row: 5/5 ;
+
+}
+
+.container-section34{
+    grid-row: 6/6 ;
+    grid-column: 2/3;
+    padding: 1em;
+
+}
+.courses {
+    width: 100%;
+    height: auto;
+}
+
