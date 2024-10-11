@@ -24,27 +24,113 @@ body{
     min-width: 100vw;
     min-height: 100vh;
     background-color: var(--main-color-body);   
-    justify-content: center;
+    
 }
 
+
+
+
+
+/* header css */
+header, 
+nav, 
 .nav-links,
-body{
+.container{
     display: flex;
 }
-/* header css */
-.nav-links{
-    gap: 1em;
+
+header,
+nav{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--other-color-reset2);
+}
+
+header{
     padding: 1em;
+}
+
+.nav-links{
+  gap: 1.5em;
+  border: 1px solid var(--other-color-reset2);
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--other-color-reset);
     cursor: pointer;
+    display: inline-block;
 }
 
 .nav-links a li {
     list-style: none;
     color: var(--other-color-reset2);
     font-weight: var(--nav-font-weight);
+}
+
+.logo-github{
+    width: 30px;
+}
+
+.logo{
+    width: 50px;
+}
+
+/* section class */
+section{
+    display: grid;
+    grid-template: minmax(20px, auto) / repeat(2, 1fr);
+    gap: .3em;
+    margin-top: 1em;
+    padding: .5em;
+    text-align: center;
+}
+
+section h1{
+    font-size: 2rem;
+    align-self: center;
+}
+
+section p {
+    font-size: .8rem;
+    color: gray;
+}
+
+section h1{
+    color: #BE9575;
+    text-shadow: #0C0B0B    ;
+}
+
+section p {
+    color: white;
+}
+
+.gojo{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container-of-picture{
+    grid-column:2/3;
+    grid-row: 1/ 5;
+}
+
+.connect {
+    width: 20px;
+    border-radius: 3px;
+}
+
+.container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2em;
+}
+
+.container ul {
+    display: flex;
+    gap: .5em;
 }
