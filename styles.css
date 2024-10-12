@@ -208,10 +208,9 @@ background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, r
 .container-section31,
 .container-section33{
     border-right: 2px solid white;
-   
 }
 .container-section31 h3{
-    color: yellow;
+    color: rgb(227, 227, 36);
 }
 
 
