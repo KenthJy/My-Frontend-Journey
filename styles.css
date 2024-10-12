@@ -51,7 +51,7 @@ nav{
 header{
     padding: .5em;
     background: rgb(78,55,154);
-background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, rgba(70,46,147,1) 2%, rgba(55,37,114,1) 8%, rgba(34,24,66,1) 30%, rgba(21,12,56,1) 64%, rgba(3,0,17,1) 81%);
+    background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, rgba(70,46,147,1) 2%, rgba(55,37,114,1) 8%, rgba(34,24,66,1) 30%, rgba(21,12,56,1) 64%, rgba(3,0,17,1) 81%);
     position:fixed;
     top: 0;
     left: 0;
@@ -60,7 +60,6 @@ background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, r
 
 .nav-links{
   gap: 1.5em;
-
 }
 
 .nav-links a {
@@ -73,7 +72,7 @@ background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, r
     list-style: none;
     color: var(--other-color-reset2);
     font-weight: var(--nav-font-weight);
-    font-size: .8rem;
+    font-size: 3vw;
 }
 
 .logo-github{
@@ -97,7 +96,7 @@ background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, r
 }
 
 .section1 h1{
-    font-size: 2rem;
+    font-size: 6vw;
     align-self: center;
 }
 
@@ -215,20 +214,15 @@ background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, r
     gap: .5em;
 }
 .container-section3:hover{
-    box-shadow: 0 0 10px orange;
+    box-shadow: inset 0 0 10px orange;
     cursor: pointer;
-
 }
 
-.container-section3:hover::after{
-    content: "Click me 👋";
-    color: rgb(255, 255, 255);
-    position: relative;
-    font-size: .5rem;
-}
+
+
 .container-section31,
 .container-section33{
-    border-right: 2px solid white;
+    border-right: 1px solid white;
 }
 
 .container-section32,
@@ -265,14 +259,12 @@ background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, r
 .container-section33{
     padding: 1em;
     grid-row: 5/5 ;
-
 }
 
 .container-section34{
     grid-row: 6/6 ;
     grid-column: 2/3;
     padding: 1em;
-
 }
 .courses {
     max-width: 100%;
@@ -280,3 +272,49 @@ background: linear-gradient(90deg, rgba(78,55,154,1) 0%, rgba(61,41,127,1) 0%, r
     border-radius: 10px;
 }
 
+@media (min-width: 412px){
+ 
+    .section1 p {
+        font-size: 2.3vw;
+        font-weight: 500;
+       
+    }
+}
+
+
+@media (min-width: 769px){
+    .nav-links{
+        gap: 5em;
+      }
+      .nav-links a li {
+        font-size: 1.2rem;
+    }
+
+    .logo-github{
+        width: 35px;
+    }
+    
+    .logo{
+        width: 70px;
+    }
+
+    .section1{
+        gap: .3em;
+        margin: 5em 0 3em;
+        padding: 1em;
+        text-align: center;
+        border-bottom-right-radius:30px;
+        box-shadow: 0 0 1px #4650bd;
+    }
+    
+    .section1 h1{
+        font-size: 7vw;
+        align-self: center;
+    }
+    
+    .section1 p {
+        font-size: 2.3vw;
+        font-weight: 500;
+       
+    }
+}
